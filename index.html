@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Title</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <script type="module" crossorigin src="http://bevolgayan.temp.swtest.ru/promo/vodohod/assets/main.js"></script>
+    <link rel="stylesheet" crossorigin href="http://bevolgayan.temp.swtest.ru/promo/vodohod/assets/main-common.css">
+</head>
+<body>
+<div>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__decor">
+                    <svg>
+                        <use xlink:href="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/sprite.svg#decor-header-top"></use>
+                    </svg>
+                </div>
+                <div class="header__section">
+                    <button class="button round-button-gray menu-button js--toggle-menu">
+                        <div class="button__circle">
+                            <svg class="icon" width="15" height="15">
+                                <path class="menu-button__cross-line line-1"
+                                      d="M2.70549 12.5888L12.588 2.70632L13.2939 2.70632L13.2939 3.41221L3.41138 13.2947L2.70549 13.2947L2.70549 12.5888Z"></path>
+                                <path class="menu-button__cross-line line-2"
+                                      d="M2.70549 12.5888L12.588 2.70632L13.2939 2.70632L13.2939 3.41221L3.41138 13.2947L2.70549 13.2947L2.70549 12.5888Z"></path>
+                                <path class="menu-button__decorate-line line-1"
+                                      d="M1.99992 7.64718L7.64707 2.00003L8.35296 2.00003L8.35296 2.70592L2.70581 8.35307L1.99992 8.35307L1.99992 7.64718Z"></path>
+                                <path class="menu-button__decorate-line line-2"
+                                      d="M8.35295 13.9998L14.0001 8.35269L14.0001 7.64679L13.2942 7.64679L7.64705 13.2939L7.64705 13.9998L8.35295 13.9998Z"></path>
+                                <g class="menu-button__angles angle-1">
+                                    <path class="menu-button__angle"
+                                          d="M7.29508 3.00098L6.00097 1.708L6.00097 1.00211L6.70686 1.00211L8.00098 2.29508L8.00098 3.00098L7.29508 3.00098Z"></path>
+                                    <path class="menu-button__angle"
+                                          d="M7.99902 2.29326L9.292 0.999146L9.99789 0.999145L9.99789 1.70504L8.70492 2.99915L7.99902 2.99915L7.99902 2.29326Z"></path>
+                                </g>
+                                <g class="menu-button__angles angle-2">
+                                    <path class="menu-button__angle"
+                                          d="M13.0015 7.29447L14.2944 6.00036L15.0003 6.00036L15.0003 6.70625L13.7074 8.00037L13.0015 8.00037L13.0015 7.29447Z"></path>
+                                    <path class="menu-button__angle"
+                                          d="M13.7059 8.00073L15 9.29371L15 9.9996L14.2941 9.9996L13 8.70663L13 8.00073L13.7059 8.00073Z"></path>
+                                </g>
+                                <g class="menu-button__angles angle-3">
+                                    <path class="menu-button__angle"
+                                          d="M9.29459 14.9987L8.00048 13.7057L8.00048 12.9998L8.70637 12.9998L10.0005 14.2928L10.0005 14.9987L9.29459 14.9987Z"></path>
+                                    <path class="menu-button__angle"
+                                          d="M6.00049 14.2933L7.29346 12.9991L7.99936 12.9991L7.99936 13.705L6.70638 14.9991L6.00049 14.9991L6.00049 14.2933Z"></path>
+                                </g>
+                                <g class="menu-button__angles angle-4">
+                                    <path class="menu-button__angle"
+                                          d="M3.00146 8.70614L1.70849 10.0003L1.00259 10.0003L1.0026 9.29436L2.29557 8.00024L3.00146 8.00024L3.00146 8.70614Z"></path>
+                                    <path class="menu-button__angle"
+                                          d="M2.29411 7.99939L0.999993 6.70641L0.999992 6.00052L1.70589 6.00052L3 7.2935L3 7.99939L2.29411 7.99939Z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="button__text">Меню</span>
+                    </button>
+                    <div class="header__phone"><span>Телефон для бронирования</span><a class="link-red"
+                                                                                       href="tel:+74954454650">+7 (495)
+                        445 46 50</a></div>
+                </div>
+                <div class="header__logo"><img src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/logo.svg"
+                                               alt="Логотип"></div>
+                <div class="header__section">
+                    <div class="header__download"><a class="link-red" href="/pdf/sample.pdf" download>Скачать
+                        брошюру</a></div>
+                    <button class="button round-button-gray cruise-button"><span
+                            class="button__text">Забронировать</span>
+                        <div class="button__circle">
+                            <svg class="icon" width="20" height="20">
+                                <path d="M0.488554 10.4654H2.34902C2.4653 12.2329 3.16297 13.8375 4.256 15.0701L2.93041 16.3957C2.74437 16.5817 2.74437 16.8608 2.93041 17.0468C3.02344 17.1398 3.13972 17.1864 3.256 17.1864C3.37227 17.1864 3.48855 17.1398 3.58158 17.0468L4.90716 15.7212C6.13972 16.8143 7.74437 17.5352 9.51181 17.6282V19.5119C9.51181 19.7677 9.72111 19.977 9.97693 19.977C10.2327 19.977 10.442 19.7677 10.442 19.5119V17.6282C12.2095 17.5119 13.8141 16.8143 15.0467 15.7212L16.3723 17.0468C16.4653 17.1398 16.5816 17.1864 16.6979 17.1864C16.8141 17.1864 16.9304 17.1398 17.0234 17.0468C17.2095 16.8608 17.2095 16.5817 17.0234 16.3957L15.6979 15.0701C16.7909 13.8375 17.5118 12.2329 17.6048 10.4654H19.4653C19.7211 10.4654 19.9304 10.2561 19.9304 10.0003C19.9304 9.74449 19.7211 9.53519 19.4653 9.53519H17.6048C17.4886 7.76775 16.7909 6.16309 15.6979 4.93054L17.0234 3.60495C17.2095 3.41891 17.2095 3.13984 17.0234 2.95379C16.8374 2.76775 16.5583 2.76775 16.3723 2.95379L15.0467 4.27937C13.8141 3.18635 12.2095 2.46542 10.442 2.3724V0.488676C10.442 0.232862 10.2327 0.0235596 9.97693 0.0235596C9.72111 0.0235596 9.51181 0.232862 9.51181 0.488676V2.3724C7.74437 2.48868 6.13972 3.18635 4.90716 4.27937L3.58158 2.95379C3.39553 2.76775 3.11646 2.76775 2.93041 2.95379C2.74437 3.13984 2.74437 3.41891 2.93041 3.60495L4.256 4.93054C3.16297 6.16309 2.44204 7.76775 2.34902 9.53519H0.488554C0.23274 9.53519 0.0234375 9.74449 0.0234375 10.0003C0.0234375 10.2561 0.23274 10.4654 0.488554 10.4654ZM9.53507 16.7212C8.02344 16.6282 6.65134 16.0236 5.58158 15.0933L8.20949 12.4654C8.58158 12.7445 9.04669 12.9305 9.53507 13.0003V16.7212ZM7.90716 10.0003C7.90716 8.83751 8.83739 7.90728 10.0002 7.90728C11.163 7.90728 12.0932 8.83751 12.0932 10.0003C12.0932 11.1631 11.163 12.0933 10.0002 12.0933C8.83739 12.0933 7.90716 11.1631 7.90716 10.0003ZM10.4653 16.7212V13.0003C10.9537 12.9305 11.3955 12.7445 11.7909 12.4654L14.4188 15.0701C13.349 16.0003 11.9769 16.605 10.4653 16.7212ZM15.07 14.4189L12.442 11.791C12.7211 11.4189 12.9072 10.9538 12.9769 10.4654H16.6979C16.6048 11.977 16.0002 13.3491 15.07 14.4189ZM16.7211 9.53519H13.0002C12.9304 9.04682 12.7444 8.60496 12.4653 8.23286L15.07 5.5817C16.0002 6.65147 16.6048 8.02356 16.7211 9.53519ZM10.4653 3.27937C11.9769 3.3724 13.349 3.97705 14.4188 4.90728L11.7909 7.55844C11.4188 7.27937 10.9537 7.09333 10.4653 7.0003V3.27937ZM9.53507 3.27937V7.0003C9.04669 7.07007 8.60483 7.25612 8.20949 7.55844L5.58158 4.93054C6.65134 4.0003 8.02344 3.39565 9.53507 3.27937ZM4.93041 5.5817L7.55832 8.20961C7.27925 8.5817 7.09321 9.04682 7.02344 9.51193H3.30251C3.39553 8.02356 4.00018 6.65147 4.93041 5.5817ZM7.02344 10.4654C7.09321 10.9538 7.27925 11.3957 7.55832 11.791L4.93041 14.4189C4.00018 13.3491 3.39553 11.977 3.30251 10.4654H7.02344Z"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="header__bottom">
+            <div class="container">
+                <ul class="header__nav">
+                    <li><a class="link-red" href="">Ретрит-круиз</a></li>
+                    <li><a class="link-red" href="">Организаторы</a></li>
+                    <li><a class="link-red" href="">Маршруты</a></li>
+                    <li><a class="link-red" href="">Программа</a></li>
+                    <li><a class="link-red" href="">Досуг</a></li>
+                    <li><a class="link-red" href="">Питание</a></li>
+                    <li><a class="link-red" href="">Размещение</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__modal">
+            <div class="container">
+                <div class="top"></div>
+                <div class="menu">
+                    <div class="menu__mobile">
+                        <div class="header__download"><a class="link-red" href="/pdf/sample.pdf" download>Скачать
+                            брошюру</a></div>
+                        <div class="header__phone"><span>Телефон для бронирования</span><a class="link-red"
+                                                                                           href="tel:+74954454650">+7
+                            (495) 445 46 50</a></div>
+                    </div>
+                    <ul class="menu__nav">
+                        <li><a href="">Ретрит-круиз</a></li>
+                        <li><a href="">Организаторы</a></li>
+                        <li><a href="">Маршруты</a></li>
+                        <li><a href="">Программа</a></li>
+                    </ul>
+                    <div class="menu__img">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--menu.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--menu@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--menu.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--menu@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--menu.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--menu@2x.jpg 2x"
+                                 alt="Пароход">
+                        </picture>
+                    </div>
+                    <ul class="menu__nav">
+                        <li><a href="">Досуг</a></li>
+                        <li><a href="">Питание</a></li>
+                        <li><a href="">Размещение</a></li>
+                        <li><a class="link-blot" href="">
+                            <div class="link-blot__bg">
+                                <svg>
+                                    <use xlink:href="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/sprite.svg#bg--blob"></use>
+                                </svg>
+                            </div>
+                            <span class="link-blot__text">Забронировать</span></a></li>
+                    </ul>
+                </div>
+                <div class="header__footer">
+                    <div class="header__contacts"><span>Для индивидуальных заказчиков:</span>
+                        <ul class="header__communication">
+                            <li><a class="link-red" href="tel:+74954454650">+7 (495) 445 46 50</a></li>
+                            <li><a class="link-red" href="mailto:premium@vodohod.ru">premium@vodohod.ru</a></li>
+                        </ul>
+                    </div>
+                    <ul class="header__social">
+                        <li><a class="round-button-gray button" href="">
+                            <div class="button__circle">
+                                <svg class="icon" width="18" height="12">
+                                    <use xlink:href="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/sprite.svg#social-vk"></use>
+                                </svg>
+                            </div>
+                        </a></li>
+                        <li><a class="round-button-gray button" href="">
+                            <div class="button__circle">
+                                <svg class="icon" width="16" height="16">
+                                    <use xlink:href="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/sprite.svg#social-od"></use>
+                                </svg>
+                            </div>
+                        </a></li>
+                    </ul>
+                    <div class="header__contacts"><span>Для корпоративных заказчиков:</span>
+                        <ul class="header__communication">
+                            <li><a class="link-red" href="tel:+74951504637">+7 (495) 150-46-37</a></li>
+                            <li><a class="link-red" href="mailto:corp@vodohod.ru">corp@vodohod.ru</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <h1 class="banner__title">
+                    <div class="line"><span>Ретрит-круиз</span></div>
+                    <div class="line"><span>ВодоходЪ &amp;&nbsp;Psychologies</span></div>
+                </h1>
+                <span class="banner__date">21&ndash;22 июня 2025</span>
+                <div class="banner__img">
+                    <button class="button button-circle" type="button">
+                        <div class="button-circle__bg"></div>
+                        <span class="button-circle__text">Бронировать круиз</span>
+                    </button>
+                    <picture>
+                        <source type="img/webp"
+                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--banner.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--banner@2x.webp 2x">
+                        <source type="img/jpg"
+                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--banner.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--banner@2x.jpg 2x">
+                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--banner.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--banner@2x.jpg 2x"
+                             alt="Баннер">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2>Первый ретрит-круиз с&nbsp;психологами и&nbsp;лекторами</h2>
+                <div class="justify">
+                    <div class="about__left">
+                        <p class="about__teaser">Круиз-ретрит предназначен для людей, стремящихся к&nbsp;гармонии в&nbsp;различных
+                            сферах и&nbsp;личностному росту.</p>
+                        <div class="img-border">
+                            <picture>
+                                <source type="img/webp"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-1.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-1@2x.webp 2x">
+                                <source type="img/jpg"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-1@2x.jpg 2x">
+                                <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-1@2x.jpg 2x"
+                                     alt="Баннер">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="about__right">
+                        <div class="about__img-group">
+                            <picture>
+                                <source type="img/webp"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-2.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-2@2x.webp 2x">
+                                <source type="img/jpg"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-2@2x.jpg 2x">
+                                <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-2@2x.jpg 2x"
+                                     alt="Баннер">
+                            </picture>
+                            <picture>
+                                <source type="img/webp"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-3.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-3@2x.webp 2x">
+                                <source type="img/jpg"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-3@2x.jpg 2x">
+                                <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-3@2x.jpg 2x"
+                                     alt="Баннер">
+                            </picture>
+                        </div>
+                        <p>На&nbsp;борту будут выступать психологи и&nbsp;коучи, которые поделятся своими знаниями и&nbsp;практическими
+                            навыками по&nbsp;улучшению качества жизни и&nbsp;решению проблем в&nbsp;тех аспектах жизни,
+                            которые интересны именно Вам.</p>
+                        <div class="img-border">
+                            <picture>
+                                <source type="img/webp"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-4.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-4@2x.webp 2x">
+                                <source type="img/jpg"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-4.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-4@2x.jpg 2x">
+                                <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-4.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--about-4@2x.jpg 2x"
+                                     alt="Баннер">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dzen">
+            <div class="container">
+                <h2>Ловим дзен во&nbsp;всех сферах</h2>
+                <div class="swiper slider-dzen">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="dzen__el">
+                                <div class="dzen__description">
+                                    <p>Во&nbsp;время круиза для путешественников будет организована насыщенная
+                                        развлекательная программа, а&nbsp;в&nbsp;свободное время можно отвлечься на&nbsp;медитативные
+                                        свойства воды и&nbsp;антистрессовое воздействие РЕКАтерапии, чтоб отдохнуть от&nbsp;суеты
+                                        большого города и&nbsp;восстановить свои силы.</p>
+                                </div>
+                                <div class="dzen__scheme">
+                                    <div class="dzen__img">
+                                        <picture>
+                                            <source type="img/webp"
+                                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-1.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-1@2x.webp 2x">
+                                            <source type="img/jpg"
+                                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-1@2x.jpg 2x">
+                                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-1@2x.jpg 2x"
+                                                 alt="Самореализация">
+                                        </picture>
+                                    </div>
+                                    <ul class="dzen__points">
+                                        <li class="self">Любовь к&nbsp;себе, самореализация</li>
+                                    </ul>
+                                </div>
+                                <div class="dzen__text">
+                                    <p>Участники смогут не&nbsp;только слушать лекции от&nbsp;профессиональных
+                                        психологов, но&nbsp;и&nbsp;участвовать в&nbsp;интерактивных мастер-классах,
+                                        групповых обсуждениях и&nbsp;индивидуальных сессиях, что поможет им&nbsp;вернуться
+                                        домой с&nbsp;новыми идеями и&nbsp;вдохновением для изменений</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dzen__el">
+                                <div class="dzen__description">
+                                    <p>Текст 2</p>
+                                </div>
+                                <div class="dzen__scheme">
+                                    <div class="dzen__img">
+                                        <picture>
+                                            <source type="img/webp"
+                                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-2.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-2@2x.webp 2x">
+                                            <source type="img/jpg"
+                                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-2@2x.jpg 2x">
+                                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-2@2x.jpg 2x"
+                                                 alt="Работа">
+                                        </picture>
+                                    </div>
+                                    <ul class="dzen__points">
+                                        <li class="self">Любовь к&nbsp;себе, самореализация</li>
+                                        <li class="work">Работа, деньги</li>
+                                    </ul>
+                                </div>
+                                <div class="dzen__text">
+                                    <p>Описание 2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dzen__el">
+                                <div class="dzen__description">
+                                    <p>Текст 3</p>
+                                </div>
+                                <div class="dzen__scheme">
+                                    <div class="dzen__img">
+                                        <picture>
+                                            <source type="img/webp"
+                                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-3.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-3@2x.webp 2x">
+                                            <source type="img/jpg"
+                                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-3@2x.jpg 2x">
+                                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-3@2x.jpg 2x"
+                                                 alt="Здоровье">
+                                        </picture>
+                                    </div>
+                                    <ul class="dzen__points">
+                                        <li class="self">Любовь к&nbsp;себе, самореализация</li>
+                                        <li class="work">Работа, деньги</li>
+                                        <li class="health">Здоровье и&nbsp;тело</li>
+                                    </ul>
+                                </div>
+                                <div class="dzen__text">
+                                    <p>Описание 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="dzen__el">
+                                <div class="dzen__description">
+                                    <p>Текст 4</p>
+                                </div>
+                                <div class="dzen__scheme">
+                                    <div class="dzen__img">
+                                        <picture>
+                                            <source type="img/webp"
+                                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-4.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-4@2x.webp 2x">
+                                            <source type="img/jpg"
+                                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-4.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-4@2x.jpg 2x">
+                                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-4.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--dzen-4@2x.jpg 2x"
+                                                 alt="Отношения">
+                                        </picture>
+                                    </div>
+                                    <ul class="dzen__points">
+                                        <li class="self">Любовь к&nbsp;себе, самореализация</li>
+                                        <li class="work">Работа, деньги</li>
+                                        <li class="health">Здоровье и&nbsp;тело</li>
+                                        <li class="relation">Отношения, семья, дружба</li>
+                                    </ul>
+                                </div>
+                                <div class="dzen__text">
+                                    <p>Описание 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="organiser">
+            <div class="container">
+                <h2>Организаторы мероприятия</h2>
+                <div class="organiser__container">
+                    <div class="organiser__el"><a class="organiser__logo" href=""><img
+                            src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/logo--psy.svg"
+                            alt="Лого Психология"></a>
+                        <div class="organiser__description">
+                            <p class="preview">&laquo;Psychologies&raquo;&nbsp;&mdash; международный медиа-бренд,
+                                объединяющий журнал и&nbsp;сайт Psychologies.ru. Чувства, интересы, желания и&nbsp;мысли,
+                                отношения с&nbsp;собой и&nbsp;другими людьми, опыт современников и&nbsp;экспертное
+                                мнение лучших психологов</p>
+                            <p class="hidden">и&nbsp;психотерапевтов; новые источники радости и&nbsp;энергии,
+                                возможности реализовать себя и&nbsp;измениться к&nbsp;лучшему, способы с&nbsp;удовольствием
+                                заботиться о&nbsp;своём здоровье и&nbsp;красоте&nbsp;&mdash; все это PSYCHOLOGIES.</p>
+                        </div>
+                        <button class="link-orange js-toggle-description" type="button" data-close="Подробнее"
+                                data-open="Скрыть"><span>Подробнее</span>
+                            <svg width="16" height="12">
+                                <use xlink:href="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/sprite.svg#decor-text-transparent"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="organiser__el"><a class="organiser__logo" href=""><img
+                            src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/logo.svg" alt="Лого Водоход"></a>
+                        <div class="organiser__description">
+                            <p class="preview">&laquo;ВодоходЪ&raquo;&nbsp;&mdash; крупнейшая судоходная компания и&nbsp;туристический
+                                оператор России. С&nbsp;2004 года компания &laquo;ВодоходЪ&raquo; организует круизные
+                                путешествия с&nbsp;посещением самых интересных городов и&nbsp;уголков нашей страны, а&nbsp;также</p>
+                            <p class="hidden"> экспедиционные круизы в&nbsp;труднодоступные регионы: круизы по&nbsp;Енисею
+                                и&nbsp;круглогодичный экспедиционный тур по&nbsp;Байкалу.</p><br>
+                            <p class="hidden">&laquo;ВодоходЪ&raquo; повышает популярность круизных путешествий по&nbsp;России,
+                                как комфортного и&nbsp;современного вида отдыха, предоставляя высокий сервис и&nbsp;сохраняя
+                                стандарты качества на&nbsp;борту своих теплоходов.</p>
+                        </div>
+                        <button class="link-orange js-toggle-description" type="button" data-close="Подробнее"
+                                data-open="Скрыть"><span>Подробнее</span>
+                            <svg width="16" height="12">
+                                <use xlink:href="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/sprite.svg#decor-text-transparent"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="route">
+            <h2>Маршрут круиза</h2>
+            <div class="swiper slider-route">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="route__el">
+                            <div class="route__bg">
+                                <picture>
+                                    <source type="img/webp"
+                                            srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.webp">
+                                    <source type="img/jpg"
+                                            srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg">
+                                    <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg"
+                                         alt="Фото маршрута">
+                                </picture>
+                            </div>
+                            <div class="route__content">
+                                <div class="route__description route__current"><span
+                                        class="route__time">12:30</span><span class="route__title">Отправление с&nbsp;Северного речного вокзала</span>
+                                    <p>Столица Красноярского края, крупнейший культурный, деловой и&nbsp;промышленный
+                                        центр Восточной Сибири. &laquo;Красный яр&raquo;&nbsp;&mdash; так называли
+                                        основанный в&nbsp;1628 году</p>
+                                </div>
+                                <div class="route__description route__next"><span
+                                        class="route__time">18:00 – 07:00</span><span class="route__title">Круизирование в&nbsp;Икшинском водохранилище</span>
+                                    <p>Столица Красноярского края, крупнейший культурный, деловой и&nbsp;промышленный
+                                        центр Восточной Сибири. &laquo;Красный яр&raquo;&nbsp;&mdash; так называли
+                                        основанный в&nbsp;1628 году</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="route__el">
+                            <div class="route__bg">
+                                <picture>
+                                    <source type="img/webp"
+                                            srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.webp">
+                                    <source type="img/jpg"
+                                            srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg">
+                                    <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg"
+                                         alt="Фото маршрута">
+                                </picture>
+                            </div>
+                            <div class="route__content">
+                                <div class="route__description route__current"><span
+                                        class="route__time">18:00 – 07:00</span><span class="route__title">Круизирование в&nbsp;Икшинском водохранилище</span>
+                                    <p>Столица Красноярского края, крупнейший культурный, деловой и&nbsp;промышленный
+                                        центр Восточной Сибири. &laquo;Красный яр&raquo;&nbsp;&mdash; так называли
+                                        основанный в&nbsp;1628 году</p>
+                                </div>
+                                <div class="route__description route__next"><span
+                                        class="route__time">18:00 – 07:00</span><span class="route__title">Круизирование в&nbsp;Икшинском водохранилище</span>
+                                    <p>Столица Красноярского края, крупнейший культурный, деловой и&nbsp;промышленный
+                                        центр Восточной Сибири. &laquo;Красный яр&raquo;&nbsp;&mdash; так называли
+                                        основанный в&nbsp;1628 году</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="route__el">
+                            <div class="route__bg">
+                                <picture>
+                                    <source type="img/webp"
+                                            srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.webp">
+                                    <source type="img/jpg"
+                                            srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg">
+                                    <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg"
+                                         alt="Фото маршрута">
+                                </picture>
+                            </div>
+                            <div class="route__content">
+                                <div class="route__description route__current"><span
+                                        class="route__time">18:00 – 07:00</span><span class="route__title">Круизирование в&nbsp;Икшинском водохранилище</span>
+                                    <p>Столица Красноярского края, крупнейший культурный, деловой и&nbsp;промышленный
+                                        центр Восточной Сибири. &laquo;Красный яр&raquo;&nbsp;&mdash; так называли
+                                        основанный в&nbsp;1628 году</p>
+                                </div>
+                                <div class="route__description route__next"><span
+                                        class="route__time">18:00 – 07:00</span><span class="route__title">Круизирование в&nbsp;Икшинском водохранилище</span>
+                                    <p>Столица Красноярского края, крупнейший культурный, деловой и&nbsp;промышленный
+                                        центр Восточной Сибири. &laquo;Красный яр&raquo;&nbsp;&mdash; так называли
+                                        основанный в&nbsp;1628 году</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="route__el">
+                            <div class="route__bg">
+                                <picture>
+                                    <source type="img/webp"
+                                            srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.webp">
+                                    <source type="img/jpg"
+                                            srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg">
+                                    <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg"
+                                         alt="Фото маршрута">
+                                </picture>
+                            </div>
+                            <div class="route__content">
+                                <div class="route__description route__current"><span
+                                        class="route__time">12:30</span><span class="route__title">Отправление с&nbsp;Северного речного вокзала</span>
+                                    <p>Столица Красноярского края, крупнейший культурный, деловой и&nbsp;промышленный
+                                        центр Восточной Сибири. &laquo;Красный яр&raquo;&nbsp;&mdash; так называли
+                                        основанный в&nbsp;1628 году</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="program">
+            <div class="container">
+                <div class="program__container">
+                    <div class="program__left">
+                        <div class="stick-wrap">
+                            <h2>Программа ретрита</h2><span>*Состав лекторов может быть изменен организатором</span>
+                        </div>
+                    </div>
+                    <div class="program__right">
+                        <ul class="speakers">
+                            <li class="speakers__el">
+                                <div class="speakers__photo"><img
+                                        src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--speaker-1.jpg"
+                                        alt="Ирина Баржак"></div>
+                                <div class="speakers__text"><span class="speakers__name">Ирина Баржак</span>
+                                    <p class="speakers__info">конфликтолог, бизнес-тренер, социальный психолог,
+                                        президент международной ассоциации текстовых консультантов и&nbsp;онлайн
+                                        терапевтов IATC&amp;OT</p>
+                                </div>
+                                <div class="speakers__theme">
+                                    <h3>&laquo;Технологии убеждения и&nbsp;влияния в&nbsp;публичном
+                                        выступлении&raquo;</h3>
+                                </div>
+                            </li>
+                            <li class="speakers__el">
+                                <div class="speakers__photo"><img
+                                        src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--speaker-2.jpg"
+                                        alt="Ольга Примаченко "></div>
+                                <div class="speakers__text"><span class="speakers__name">Ольга Примаченко</span>
+                                    <p class="speakers__info">журналист, психолог и&nbsp;автор культовой книги-события
+                                        &laquo;К&nbsp;себе нежно&raquo;, бестселлера о&nbsp;бережных отношениях &laquo;С&nbsp;тобой
+                                        я&nbsp;дома&raquo;, книги о&nbsp;деньгах и&nbsp;душевном спокойствии &laquo;Нежно-денежно&raquo;,
+                                        метафорических ассоциативных карт &laquo;Себе можно верить&raquo;, ежедневника
+                                        &laquo;365 дней без суеты&raquo; и&nbsp;др.</p>
+                                </div>
+                                <div class="speakers__theme">
+                                    <h3>&laquo;К&nbsp;себе нежно&raquo;. О&nbsp;приоритетах и&nbsp;здоровой
+                                        коммуникации</h3>
+                                </div>
+                            </li>
+                            <li class="speakers__el">
+                                <div class="speakers__photo"><img
+                                        src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--speaker-3.jpg"
+                                        alt="Вячеслав Лебедев"></div>
+                                <div class="speakers__text"><span class="speakers__name">Вячеслав Лебедев</span>
+                                    <p class="speakers__info">нейропсихолог, психофизиолог, сотрудник факультета
+                                        психологии МГУ им. М.&nbsp;В.&nbsp;Ломоносова, основатель Центра детской
+                                        нейропсихологии и&nbsp;нейротерапии &laquo;Нейрофитнес&raquo;</p>
+                                </div>
+                                <div class="speakers__theme">
+                                    <h3>&laquo;Мозг нового поколения: как работать с&nbsp;детьми
+                                        21&nbsp;века?&raquo;</h3>
+                                </div>
+                            </li>
+                            <li class="speakers__el">
+                                <div class="speakers__photo"><img
+                                        src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--speaker-4.jpg"
+                                        alt=""></div>
+                                <div class="speakers__text"><span class="speakers__name">Ольга Тонкова-Кузнецова</span>
+                                    <p class="speakers__info">клинический психолог, нутрициолог, автор и&nbsp;организатор
+                                        программ по&nbsp;коррекции веса в&nbsp;Российских и&nbsp;Европейских клиниках,
+                                        сотрудник Института психологии и&nbsp;психотерапии, сотрудник Московского
+                                        Института Психоанализа и&nbsp;др.</p>
+                                </div>
+                                <div class="speakers__theme">
+                                    <h3>&laquo;Как правильное питание меняет жизнь&raquo;</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="free">
+            <div class="container">
+                <div class="free__header">
+                    <h2>Свободное время</h2>
+                    <p>В&nbsp;свободное время можно посетить концерты классической музыки, танцевальные программы,
+                        интеллектуальные викторины и&nbsp;многое другое&nbsp;&mdash; мы&nbsp;позаботились о&nbsp;вашем
+                        досуге, вам будет просто некогда скучать</p>
+                </div>
+                <div class="free__content">
+                    <div class="free__el">
+                        <div class="free__name">
+                            <h3>Рекатерапия</h3>
+                        </div>
+                        <div class="free__img">
+                            <picture>
+                                <source type="img/webp"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-1.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-1@2x.webp 2x">
+                                <source type="img/jpg"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-1@2x.jpg 2x">
+                                <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-1@2x.jpg 2x"
+                                     alt="Рекатерапия">
+                            </picture>
+                        </div>
+                        <div class="free__text">
+                            <p>Если вы&nbsp;прекрасно поете, обязательно сходите в&nbsp;караоке-бар, а&nbsp;если с&nbsp;пением
+                                у&nbsp;вас не&nbsp;очень, все равно сходите&nbsp;&mdash; здесь все свои.</p>
+                        </div>
+                    </div>
+                    <div class="free__el">
+                        <div class="free__name">
+                            <h3>Живая музыка</h3>
+                        </div>
+                        <div class="free__img">
+                            <picture>
+                                <source type="img/webp"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-2.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-2@2x.webp 2x">
+                                <source type="img/jpg"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-2@2x.jpg 2x">
+                                <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-2@2x.jpg 2x"
+                                     alt="Живая музыка">
+                            </picture>
+                        </div>
+                        <div class="free__text">
+                            <p>Сибирская сауна и&nbsp;массаж&nbsp;&mdash; лучший способ релаксации после насыщенного
+                                дня. Расслабьтесь, восстановите силы, запаситесь энергией.</p>
+                        </div>
+                    </div>
+                    <div class="free__el">
+                        <div class="free__name">
+                            <h3>Викторины</h3>
+                        </div>
+                        <div class="free__img">
+                            <picture>
+                                <source type="img/webp"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-3.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-3@2x.webp 2x">
+                                <source type="img/jpg"
+                                        srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-3@2x.jpg 2x">
+                                <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--free-3@2x.jpg 2x"
+                                     alt="Викторины">
+                            </picture>
+                        </div>
+                        <div class="free__text">
+                            <p>Йога, пилатес, поддерживающие тренировки&nbsp;&mdash; это&nbsp;то, что нужно, чтобы
+                                сохранить форму на&nbsp;отдыхе.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comfort">
+            <div class="container">
+                <h2>Путешествуем с&nbsp;комфортом на&nbsp;теплоходе &laquo;Константин Коротков&raquo;</h2>
+                <div class="comfort__content">
+                    <div class="comfort__img img-border">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--comfort.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--comfort@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--comfort.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--comfort@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--comfort.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--comfort@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="comfort__text">
+                        <p>Путешествие на&nbsp;теплоходе &laquo;Константин Коротков&raquo; класса &laquo;Премиум&raquo;&nbsp;&mdash;
+                            это круиз в&nbsp;атмосфере привычного комфорта. Вы&nbsp;можете ни&nbsp;о&nbsp;чем не&nbsp;волноваться:
+                            на&nbsp;борту вас будет ждать не&nbsp;только всё самое необходимое, но&nbsp;и&nbsp;немного
+                            больше.</p>
+                        <p>Комфортабельные каюты с&nbsp;современным дизайном, изысканная кухня, уникальная концепция
+                            развлечений на&nbsp;борту, экскурсионная программа&nbsp;&mdash; все это уже включено в&nbsp;стоимость.
+                            Идеальный формат для спокойного и&nbsp;размеренного отдыха.</p>
+                        <p>Помимо обширного каютного фонда, теплоход &laquo;Константин Коротков&raquo; предлагает
+                            большое количество уютных мест для отдыха. В&nbsp;атмосферных барах и&nbsp;гостеприимных
+                            ресторанах на&nbsp;теплоходе вас ждёт тёплый приём, расслабляющая обстановка и&nbsp;потрясающие
+                            панорамные виды</p>
+                    </div>
+                    <div class="comfort__circle circle-1"><img
+                            src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--comfort-1.jpg"></div>
+                    <div class="comfort__circle circle-2"><img
+                            src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--comfort-2.jpg"></div>
+                    <div class="comfort__circle size-l circle-3"><img
+                            src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--comfort-3.jpg"></div>
+                    <div class="comfort__circle size-l circle-4"><img
+                            src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--comfort-4.jpg"></div>
+                    <div class="comfort__circle circle-5 circle-text">
+                        <h4>218</h4><span>посадочных мест</span>
+                    </div>
+                    <div class="comfort__circle circle-6 circle-text">
+                        <h4>2.8 м</h4><span>осадка</span>
+                    </div>
+                    <div class="comfort__circle size-l circle-7 circle-text">
+                        <h4>26 км/ч</h4><span>максимальная скорость</span>
+                    </div>
+                    <div class="comfort__circle size-xl circle-8 circle-text">
+                        <h4>125 х 16,7 м</h4><span>размер теплохода</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="photo">
+            <div class="photo__carousel">
+                <div class="photo__group">
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                </div>
+                <div class="photo__group" aria-hidden>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-2@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-3@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-4@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-5@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="photo__carousel reverse">
+                <div class="photo__group">
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                </div>
+                <div class="photo__group" aria-hidden>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-1@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-6@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-7@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-8@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                    <div class="photo__el">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--carousel-9@2x.jpg 2x"
+                                 alt="Путешествие">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rooms" id="rooms">
+            <div class="container">
+                <h2> Варианты размещения</h2>
+            </div>
+            <ul class="rooms__list">
+                <li class="rooms__item rooms__item--1 active mouseenter">
+                    <div class="rooms__item-container">
+                        <div class="rooms__wrapper">
+                            <header class="rooms__header">
+                                <h3 class="h3--rooms title">Стандарт<br>одноместный</h3>
+                                <p class="h5 h5--rooms-area">Площадь<br>от 8,1 м2 до 13,9 м2</p>
+                            </header>
+                            <div class="rooms__content">
+                                <ul class="rooms__services">
+                                    <li class="rooms__service rooms__service--1">Односпальная кровать</li>
+                                    <li class="rooms__service rooms__service--2">Шкаф для одежды</li>
+                                    <li class="rooms__service rooms__service--3">Холодильник (минибар)</li>
+                                    <li class="rooms__service rooms__service--4">Телевизор</li>
+                                    <li class="rooms__service rooms__service--5">Радио</li>
+                                    <li class="rooms__service rooms__service--6">Кондиционер</li>
+                                    <li class="rooms__service rooms__service--7">Санузел</li>
+                                    <li class="rooms__service rooms__service--8">Фен</li>
+                                    <li class="rooms__service rooms__service--9">Окно</li>
+                                    <li class="rooms__service rooms__service--10">Розетка 220V</li>
+                                    <li class="rooms__service rooms__service--11">Сейф</li>
+                                </ul>
+                            </div>
+                            <div class="rooms__bottom">
+                                <div class="progress"><span></span></div>
+                                <div class="fraction fraction--rooms-1"><span
+                                        class="fraction__current fraction__current--rooms">001</span><span
+                                        class="fraction__all fraction__all--rooms">004</span></div>
+                                <div class="rooms__buttons">
+                                    <button class="button round-button-gray button-prev">
+                                        <div class="button__circle">
+                                            <svg class="icon" width="12" height="12">
+                                                <path class="static"
+                                                      d="M10.3862 6L12 4.60088L11.3069 4L9 6L11.3069 8L12 7.39912L10.3862 6Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                <path class="moved"
+                                                      d="M6.40206 6L12 0.667759L11.299 0L5 6L11.299 12L12 11.3322L6.40206 6Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button class="button round-button-gray button-next">
+                                        <div class="button__circle">
+                                            <svg class="icon" width="12" height="12">
+                                                <path class="static"
+                                                      d="M1.6323 5.99992L0 4.4451L0.701032 3.77734L3.03437 5.99992L0.701032 8.2225L0 7.55474L1.6323 5.99992Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                <path class="moved"
+                                                      d="M5.59794 5.99998L0 0.667756L0.701032 0L7 5.99998L0.701032 12L0 11.3322L5.59794 5.99998Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="rooms__select">
+                                <button class="button button-circle" type="button">
+                                    <div class="button-circle__bg"></div>
+                                    <span class="button-circle__text">Бронировать круиз</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rooms__slider rooms__slider--1 swiper-container">
+                            <ul class="rooms__slider-list swiper-wrapper">
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                            </ul>
+                            <div class="rooms__mask"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="rooms__item rooms__item--2">
+                    <div class="rooms__item-container">
+                        <div class="rooms__wrapper">
+                            <header class="rooms__header">
+                                <h3 class="h3--rooms title">Стандарт<br>одноместный</h3>
+                                <p class="h5 h5--rooms-area">Площадь<br>от 8,1 м2 до 13,9 м2</p>
+                            </header>
+                            <div class="rooms__content">
+                                <ul class="rooms__services">
+                                    <li class="rooms__service rooms__service--1">Односпальная кровать</li>
+                                    <li class="rooms__service rooms__service--2">Шкаф для одежды</li>
+                                    <li class="rooms__service rooms__service--3">Холодильник (минибар)</li>
+                                    <li class="rooms__service rooms__service--4">Телевизор</li>
+                                    <li class="rooms__service rooms__service--5">Радио</li>
+                                    <li class="rooms__service rooms__service--6">Кондиционер</li>
+                                    <li class="rooms__service rooms__service--7">Санузел</li>
+                                    <li class="rooms__service rooms__service--8">Фен</li>
+                                    <li class="rooms__service rooms__service--9">Окно</li>
+                                    <li class="rooms__service rooms__service--10">Розетка 220V</li>
+                                    <li class="rooms__service rooms__service--11">Сейф</li>
+                                </ul>
+                            </div>
+                            <div class="rooms__bottom">
+                                <div class="progress"><span></span></div>
+                                <div class="fraction fraction--rooms-2"><span
+                                        class="fraction__current fraction__current--rooms">001</span><span
+                                        class="fraction__all fraction__all--rooms">004</span></div>
+                                <div class="rooms__buttons">
+                                    <button class="button round-button-gray button-prev">
+                                        <div class="button__circle">
+                                            <svg class="icon" width="12" height="12">
+                                                <path class="static"
+                                                      d="M10.3862 6L12 4.60088L11.3069 4L9 6L11.3069 8L12 7.39912L10.3862 6Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                <path class="moved"
+                                                      d="M6.40206 6L12 0.667759L11.299 0L5 6L11.299 12L12 11.3322L6.40206 6Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button class="button round-button-gray button-next">
+                                        <div class="button__circle">
+                                            <svg class="icon" width="12" height="12">
+                                                <path class="static"
+                                                      d="M1.6323 5.99992L0 4.4451L0.701032 3.77734L3.03437 5.99992L0.701032 8.2225L0 7.55474L1.6323 5.99992Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                <path class="moved"
+                                                      d="M5.59794 5.99998L0 0.667756L0.701032 0L7 5.99998L0.701032 12L0 11.3322L5.59794 5.99998Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="rooms__select">
+                                <button class="button button-circle" type="button">
+                                    <div class="button-circle__bg"></div>
+                                    <span class="button-circle__text">Бронировать круиз</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rooms__slider rooms__slider--1 swiper-container">
+                            <ul class="rooms__slider-list swiper-wrapper">
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                            </ul>
+                            <div class="rooms__mask"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="rooms__item rooms__item--3">
+                    <div class="rooms__item-container">
+                        <div class="rooms__wrapper">
+                            <header class="rooms__header">
+                                <h3 class="h3--rooms title">Стандарт<br>одноместный</h3>
+                                <p class="h5 h5--rooms-area">Площадь<br>от 8,1 м2 до 13,9 м2</p>
+                            </header>
+                            <div class="rooms__content">
+                                <ul class="rooms__services">
+                                    <li class="rooms__service rooms__service--1">Односпальная кровать</li>
+                                    <li class="rooms__service rooms__service--2">Шкаф для одежды</li>
+                                    <li class="rooms__service rooms__service--3">Холодильник (минибар)</li>
+                                    <li class="rooms__service rooms__service--4">Телевизор</li>
+                                    <li class="rooms__service rooms__service--5">Радио</li>
+                                    <li class="rooms__service rooms__service--6">Кондиционер</li>
+                                    <li class="rooms__service rooms__service--7">Санузел</li>
+                                    <li class="rooms__service rooms__service--8">Фен</li>
+                                    <li class="rooms__service rooms__service--9">Окно</li>
+                                    <li class="rooms__service rooms__service--10">Розетка 220V</li>
+                                    <li class="rooms__service rooms__service--11">Сейф</li>
+                                </ul>
+                            </div>
+                            <div class="rooms__bottom">
+                                <div class="progress"><span></span></div>
+                                <div class="fraction fraction--rooms-3"><span
+                                        class="fraction__current fraction__current--rooms">001</span><span
+                                        class="fraction__all fraction__all--rooms">004</span></div>
+                                <div class="rooms__buttons">
+                                    <button class="button round-button-gray button-prev">
+                                        <div class="button__circle">
+                                            <svg class="icon" width="12" height="12">
+                                                <path class="static"
+                                                      d="M10.3862 6L12 4.60088L11.3069 4L9 6L11.3069 8L12 7.39912L10.3862 6Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                <path class="moved"
+                                                      d="M6.40206 6L12 0.667759L11.299 0L5 6L11.299 12L12 11.3322L6.40206 6Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button class="button round-button-gray button-next">
+                                        <div class="button__circle">
+                                            <svg class="icon" width="12" height="12">
+                                                <path class="static"
+                                                      d="M1.6323 5.99992L0 4.4451L0.701032 3.77734L3.03437 5.99992L0.701032 8.2225L0 7.55474L1.6323 5.99992Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                <path class="moved"
+                                                      d="M5.59794 5.99998L0 0.667756L0.701032 0L7 5.99998L0.701032 12L0 11.3322L5.59794 5.99998Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="rooms__select">
+                                <button class="button button-circle" type="button">
+                                    <div class="button-circle__bg"></div>
+                                    <span class="button-circle__text">Бронировать круиз</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rooms__slider rooms__slider--1 swiper-container">
+                            <ul class="rooms__slider-list swiper-wrapper">
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                            </ul>
+                            <div class="rooms__mask"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="rooms__item rooms__item--4">
+                    <div class="rooms__item-container">
+                        <div class="rooms__wrapper">
+                            <header class="rooms__header">
+                                <h3 class="h3--rooms title">Стандарт<br>одноместный</h3>
+                                <p class="h5 h5--rooms-area">Площадь<br>от 8,1 м2 до 13,9 м2</p>
+                            </header>
+                            <div class="rooms__content">
+                                <ul class="rooms__services">
+                                    <li class="rooms__service rooms__service--1">Односпальная кровать</li>
+                                    <li class="rooms__service rooms__service--2">Шкаф для одежды</li>
+                                    <li class="rooms__service rooms__service--3">Холодильник (минибар)</li>
+                                    <li class="rooms__service rooms__service--4">Телевизор</li>
+                                    <li class="rooms__service rooms__service--5">Радио</li>
+                                    <li class="rooms__service rooms__service--6">Кондиционер</li>
+                                    <li class="rooms__service rooms__service--7">Санузел</li>
+                                    <li class="rooms__service rooms__service--8">Фен</li>
+                                    <li class="rooms__service rooms__service--9">Окно</li>
+                                    <li class="rooms__service rooms__service--10">Розетка 220V</li>
+                                    <li class="rooms__service rooms__service--11">Сейф</li>
+                                </ul>
+                            </div>
+                            <div class="rooms__bottom">
+                                <div class="progress"><span></span></div>
+                                <div class="fraction fraction--rooms-4"><span
+                                        class="fraction__current fraction__current--rooms">001</span><span
+                                        class="fraction__all fraction__all--rooms">004</span></div>
+                                <div class="rooms__buttons">
+                                    <button class="button round-button-gray button-prev">
+                                        <div class="button__circle">
+                                            <svg class="icon" width="12" height="12">
+                                                <path class="static"
+                                                      d="M10.3862 6L12 4.60088L11.3069 4L9 6L11.3069 8L12 7.39912L10.3862 6Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                <path class="moved"
+                                                      d="M6.40206 6L12 0.667759L11.299 0L5 6L11.299 12L12 11.3322L6.40206 6Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button class="button round-button-gray button-next">
+                                        <div class="button__circle">
+                                            <svg class="icon" width="12" height="12">
+                                                <path class="static"
+                                                      d="M1.6323 5.99992L0 4.4451L0.701032 3.77734L3.03437 5.99992L0.701032 8.2225L0 7.55474L1.6323 5.99992Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                <path class="moved"
+                                                      d="M5.59794 5.99998L0 0.667756L0.701032 0L7 5.99998L0.701032 12L0 11.3322L5.59794 5.99998Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="rooms__select">
+                                <button class="button button-circle" type="button">
+                                    <div class="button-circle__bg"></div>
+                                    <span class="button-circle__text">Бронировать круиз</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rooms__slider rooms__slider--1 swiper-container">
+                            <ul class="rooms__slider-list swiper-wrapper">
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                            </ul>
+                            <div class="rooms__mask"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="rooms__item rooms__item--5">
+                    <div class="rooms__item-container">
+                        <div class="rooms__wrapper">
+                            <header class="rooms__header">
+                                <h3 class="h3--rooms title">Стандарт<br>одноместный</h3>
+                                <p class="h5 h5--rooms-area">Площадь<br>от 8,1 м2 до 13,9 м2</p>
+                            </header>
+                            <div class="rooms__content">
+                                <ul class="rooms__services">
+                                    <li class="rooms__service rooms__service--1">Односпальная кровать</li>
+                                    <li class="rooms__service rooms__service--2">Шкаф для одежды</li>
+                                    <li class="rooms__service rooms__service--3">Холодильник (минибар)</li>
+                                    <li class="rooms__service rooms__service--4">Телевизор</li>
+                                    <li class="rooms__service rooms__service--5">Радио</li>
+                                    <li class="rooms__service rooms__service--6">Кондиционер</li>
+                                    <li class="rooms__service rooms__service--7">Санузел</li>
+                                    <li class="rooms__service rooms__service--8">Фен</li>
+                                    <li class="rooms__service rooms__service--9">Окно</li>
+                                    <li class="rooms__service rooms__service--10">Розетка 220V</li>
+                                    <li class="rooms__service rooms__service--11">Сейф</li>
+                                </ul>
+                            </div>
+                            <div class="rooms__bottom">
+                                <div class="progress"><span></span></div>
+                                <div class="fraction fraction--rooms-5"><span
+                                        class="fraction__current fraction__current--rooms">001</span><span
+                                        class="fraction__all fraction__all--rooms">004</span></div>
+                                <div class="rooms__buttons">
+                                    <button class="button round-button-gray button-prev">
+                                        <div class="button__circle">
+                                            <svg class="icon" width="12" height="12">
+                                                <path class="static"
+                                                      d="M10.3862 6L12 4.60088L11.3069 4L9 6L11.3069 8L12 7.39912L10.3862 6Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                <path class="moved"
+                                                      d="M6.40206 6L12 0.667759L11.299 0L5 6L11.299 12L12 11.3322L6.40206 6Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button class="button round-button-gray button-next">
+                                        <div class="button__circle">
+                                            <svg class="icon" width="12" height="12">
+                                                <path class="static"
+                                                      d="M1.6323 5.99992L0 4.4451L0.701032 3.77734L3.03437 5.99992L0.701032 8.2225L0 7.55474L1.6323 5.99992Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                <path class="moved"
+                                                      d="M5.59794 5.99998L0 0.667756L0.701032 0L7 5.99998L0.701032 12L0 11.3322L5.59794 5.99998Z"
+                                                      fill-rule="evenodd" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="rooms__select">
+                                <button class="button button-circle" type="button">
+                                    <div class="button-circle__bg"></div>
+                                    <span class="button-circle__text">Бронировать круиз</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rooms__slider rooms__slider--1 swiper-container">
+                            <ul class="rooms__slider-list swiper-wrapper">
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-1.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-2.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-3.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                                <li class="rooms__slider-item swiper-slide">
+                                    <picture class="rooms__image" itemscope itemtype="http://schema.org/ImageObject">
+                                        <source type="img/webp"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.webp">
+                                        <source type="img/jpg"
+                                                srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg">
+                                        <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--route-4.jpg"
+                                             alt="Фото маршрута">
+                                        <meta itemprop="name" content="rooms">
+                                    </picture>
+                                </li>
+                            </ul>
+                            <div class="rooms__mask"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="kitchen">
+            <div class="container">
+                <div class="kitchen__header">
+                    <h2>Гастрономическая<br>концепция</h2>
+                    <p>Питание в&nbsp;ресторанах на&nbsp;теплоходе &laquo;Константин Коротков&raquo; организовано по&nbsp;гастрономической
+                        концепции &laquo;Родные берега&raquo;. На&nbsp;борту вас ждёт кухня в&nbsp;лучших традициях
+                        побережья Поволжья, Дона, Чёрного моря, Енисея, Русского Севера и&nbsp;Восточной Сибири. В&nbsp;своих
+                        рецептах при приготовлении наши повара используют свежие локальные продукты из&nbsp;регионов
+                        путешествия наших круизов.</p>
+                </div>
+                <div class="kitchen__content">
+                    <div class="kitchen__img img-border">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-1.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-1@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-1@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-1.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-1@2x.jpg 2x"
+                                 alt="Баннер">
+                        </picture>
+                    </div>
+                    <div class="kitchen__img">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-2.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-2@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-2@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-2.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-2@2x.jpg 2x"
+                                 alt="Баннер">
+                        </picture>
+                    </div>
+                    <div class="kitchen__img">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-3.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-3@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-3@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-3.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-3@2x.jpg 2x"
+                                 alt="Баннер">
+                        </picture>
+                    </div>
+                    <div class="kitchen__img">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-4.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-4@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-4.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-4@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-4.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-4@2x.jpg 2x"
+                                 alt="Баннер">
+                        </picture>
+                    </div>
+                    <div class="kitchen__img">
+                        <picture>
+                            <source type="img/webp"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-5.webp 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-5@2x.webp 2x">
+                            <source type="img/jpg"
+                                    srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-5.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-5@2x.jpg 2x">
+                            <img srcset="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-5.jpg 1x, http://bevolgayan.temp.swtest.ru/promo/vodohod/img/img--kitchen-5@2x.jpg 2x"
+                                 alt="Баннер">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="container">
+                <div class="justify">
+                    <div class="subscribe__text">
+                        <h3>Подписка на&nbsp;новости</h3>
+                        <p>Никакого спама! Только полезные новости о&nbsp;премиумных круизах компании &laquo;ВодоходЪ&raquo;</p>
+                    </div>
+                    <form class="subscribe__form" action="" method="">
+                        <div class="subscribe__field">
+                            <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}">
+                            <div class="subscribe__label">Введите ваш e-mail</div>
+                            <span class="subscribe__error">Неправильно введён e-mail</span>
+                        </div>
+                        <button class="button-subscribe">
+                            <div class="button-subscribe__bg">
+                                <svg>
+                                    <use xlink:href="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/sprite.svg#bg--subscribe"></use>
+                                </svg>
+                            </div>
+                            <span class="button-subscribe__text">Забронировать</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__contacts"><span>Для индивидуальных заказчиков:</span>
+                <ul class="footer__communication">
+                    <li><a class="link-red" href="tel:+74954454650">+7 (495) 445 46 50</a></li>
+                    <li><a class="link-red" href="mailto:premium@vodohod.ru">premium@vodohod.ru</a></li>
+                </ul>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__logo"><img src="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/logo.svg"
+                                               alt="Логотип"></div>
+                <div class="footer__address"><span>125040, г. Москва, Ленинградский проспект,<br>д.&nbsp;15, стр.&nbsp;14, этаж&nbsp;4, пом.</span>
+                </div>
+                <ul class="footer__social">
+                    <li><a class="round-button-gray button" href="">
+                        <div class="button__circle">
+                            <svg class="icon" width="18" height="12">
+                                <use xlink:href="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/sprite.svg#social-vk"></use>
+                            </svg>
+                        </div>
+                    </a></li>
+                    <li><a class="round-button-gray button" href="">
+                        <div class="button__circle">
+                            <svg class="icon" width="16" height="16">
+                                <use xlink:href="http://bevolgayan.temp.swtest.ru/promo/vodohod/img/sprite.svg#social-od"></use>
+                            </svg>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="footer__contacts"><span>Для корпоративных заказчиков:</span>
+                <ul class="footer__communication">
+                    <li><a class="link-red" href="tel:+74951504637">+7 (495) 150-46-37</a></li>
+                    <li><a class="link-red" href="mailto:corp@vodohod.ru">corp@vodohod.ru</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <ul class="footer__info">
+                <li class="copyright"><span>&copy;&nbsp;2020, ВодоходЪ</span></li>
+                <li><a href="">Политика конфиденциальности</a></li>
+                <li><a href="">Публичная оферта</a></li>
+                <li class="number"><span>Реестровый номер туроператора серия РТО &#8470;&nbsp;002057</span></li>
+            </ul>
+            <div class="footer__made"><span>Сделано в</span><a class="link-red" href="" target="_blank">ТОДО</a></div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
