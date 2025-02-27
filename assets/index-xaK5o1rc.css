@@ -218,9 +218,16 @@ body.fixed {
 }
 .banner__title .line {
   overflow: hidden;
+  padding-bottom: 5px;
 }
 .banner__title .line span {
   display: block;
+  overflow: hidden;
+}
+.banner__title .line span i {
+  display: inline-block;
+  font-style: normal;
+  transform: translateY(110%);
 }
 .banner__date {
   display: block;
@@ -228,6 +235,7 @@ body.fixed {
   color: #962344;
   margin-bottom: 11.5rem;
   font-size: 2rem;
+  opacity: 0;
 }
 @media only screen and (max-width: 1439px) {
   .banner__date {
@@ -240,7 +248,6 @@ body.fixed {
   }
 }
 .banner__img {
-  background: #b89a89;
   position: relative;
 }
 @media only screen and (max-width: 767px) {
@@ -250,7 +257,11 @@ body.fixed {
     height: 36rem;
   }
 }
+.banner__img picture {
+  opacity: 0;
+}
 .banner__img img {
+  opacity: 0;
   max-width: 100%;
 }
 @media only screen and (max-width: 767px) {
@@ -471,6 +482,12 @@ body.fixed {
   .dzen .container {
     padding: 0;
   }
+}
+.dzen-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 505;
 }
 .dzen h2 {
   text-align: left;
@@ -1514,6 +1531,7 @@ body.fixed {
 }
 .free__header h2 {
   display: inline-flex;
+  flex-direction: column;
   text-align: left;
 }
 @media only screen and (max-width: 1439px) {
@@ -1527,6 +1545,9 @@ body.fixed {
     width: 100%;
     text-align: center;
   }
+}
+.free__header h2 span {
+  display: block;
 }
 .free__header p {
   display: inline-block;
@@ -2652,7 +2673,7 @@ body.fixed {
 .kitchen {
   padding: 10rem 0 20rem;
 }
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1279px) {
   .kitchen {
     padding: 8rem 0 16rem;
   }
@@ -2668,7 +2689,7 @@ body.fixed {
   grid-template-columns: repeat(2, calc(50% - 1rem));
   margin-bottom: 8rem;
 }
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1279px) {
   .kitchen__header {
     display: flex;
     flex-direction: column;
@@ -2728,7 +2749,7 @@ body.fixed {
   padding: 4.5rem 0;
   overflow: hidden;
 }
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1279px) {
   .subscribe {
     padding: 4rem 0;
   }
@@ -2742,7 +2763,7 @@ body.fixed {
   gap: 10rem;
   align-items: stretch;
 }
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1279px) {
   .subscribe .justify {
     flex-direction: column;
     gap: 2rem;
@@ -2760,7 +2781,7 @@ body.fixed {
     width: calc(40% - 5rem);
   }
 }
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1279px) {
   .subscribe__text {
     width: 100%;
   }
@@ -2860,7 +2881,7 @@ body.fixed {
   font-size: 3.6rem;
   font-family: "Lovelace", Helvetica, Arial, sans-serif;
 }
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1279px) {
   .subscribe__field input {
     font-size: 3rem;
   }
@@ -2886,7 +2907,7 @@ body.fixed {
   font-size: 3.6rem;
   pointer-events: none;
 }
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1279px) {
   .subscribe__label {
     font-size: 3rem;
   }
@@ -2991,6 +3012,10 @@ body.fixed {
   .button--totop:active::before {
     height: calc(100% - 1px);
   }
+}
+.section-wrapper .observed-section {
+  position: sticky;
+  top: 0;
 }
 .justify {
   display: flex;
@@ -15873,6 +15898,10 @@ body.compensate-for-scrollbar {
 .header {
   position: relative;
   z-index: 30;
+  padding-top: 82px;
+}
+.header.open .header__top {
+  background: rgba(253, 248, 244, 0) !important;
 }
 .header.open .header__modal {
   opacity: 1;
@@ -15897,8 +15926,13 @@ body.compensate-for-scrollbar {
 }
 .header__top {
   width: 100%;
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
   z-index: 10;
+  background: rgb(253, 248, 244);
+  transition: all 0.3s ease-in-out;
 }
 .header__top .container {
   display: flex;
@@ -15928,6 +15962,8 @@ body.compensate-for-scrollbar {
   padding-top: 7.2rem;
   position: relative;
   z-index: 1;
+  transform: translateY(-200px);
+  opacity: 0;
 }
 @media only screen and (max-width: 1439px) {
   .header__bottom {
@@ -15943,7 +15979,8 @@ body.compensate-for-scrollbar {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -200px);
+  opacity: 0;
 }
 .header__decor svg {
   display: block;
@@ -15962,6 +15999,10 @@ body.compensate-for-scrollbar {
     height: 8px;
   }
 }
+.header__logo {
+  transform: translateY(-200px);
+  opacity: 0;
+}
 @media only screen and (max-width: 767px) {
   .header__logo {
     transform: translateY(-10px);
@@ -15979,6 +16020,8 @@ body.compensate-for-scrollbar {
   width: 60rem;
   padding: 1.7rem 0 2.5rem;
   position: relative;
+  transform: translateY(-200px);
+  opacity: 0;
 }
 @media only screen and (max-width: 1659px) {
   .header__section {
@@ -16131,7 +16174,7 @@ body.compensate-for-scrollbar {
   height: 100vh;
   background: url("/img/bg--paper.jpg") no-repeat 50% 50%;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   z-index: 5;
   inset: 0;
   transition: all 0.3s ease-in-out;
