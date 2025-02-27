@@ -11692,20 +11692,7 @@ ScrollToPlugin.config = function(vars) {
 _getGSAP3() && gsap.registerPlugin(ScrollToPlugin);
 document.addEventListener("DOMContentLoaded", () => {
   gsapWithCSS.registerPlugin(ScrollTrigger$1, Observer, ScrollToPlugin);
-  let isScrollBlocked = false;
-  let scrollDirection = 1;
-  let currentObservedSection;
   document.querySelector(".header");
-  const EnablePreventDefault = () => {
-    isScrollBlocked = true;
-    observer.kill();
-    observer = createObserver();
-  };
-  const DisablePreventDefault = () => {
-    isScrollBlocked = false;
-    observer.kill();
-    observer = createObserver();
-  };
   const freeContent = document.querySelector(".free__content");
   const freeElements = gsapWithCSS.utils.toArray(".free__el");
   let windowWidth = window.innerWidth;
@@ -11746,172 +11733,53 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   updateScrollTriggerFreeSection();
   window.addEventListener("resize", updateScrollTriggerFreeSection);
-  class ObservedSection {
-    constructor(container) {
-      this.container = container;
-      this.section = container.querySelector("section");
-      this.activeSlide = 0;
-      this.swiper = void 0;
-      this.rect = container.getBoundingClientRect();
-      this.height = +this.container.clientHeight * 3;
-      this.offsetY = this.rect.top.toFixed(0);
-      this.init();
-      this.swiperLastSlide = false;
-      this.swiperFirstSlide = true;
-      this.isSwiping = false;
-    }
-    init() {
-      this.container.style.height = this.height + "px";
-      this.swiper = new Swiper(this.container.querySelector(".swiper"), {
-        direction: "horizontal",
-        modules: [Mousewheel, EffectFade],
-        effect: "fade",
-        allowTouchMove: false,
-        // отключаем свайпы
-        mousewheel: false,
-        // отключаем колесо мыши
-        navigation: {
-          nextEl: this.container.querySelector(".swiper-next"),
-          prevEl: this.container.querySelector(".swiper-prev")
-        },
-        slidesPerView: 1,
-        spaceBetween: 0,
-        freeMode: false,
-        autoHeight: false,
-        on: {
-          slideChangeTransitionStart: () => {
-            this.isSwiping = true;
-          },
-          slideChangeTransitionEnd: () => {
-            setTimeout(() => {
-              this.isSwiping = false;
-            }, 400);
-            if (this.swiper.activeIndex + 1 === this.swiper.slides.length) {
-              this.setLastStatus(true);
-            } else {
-              this.setLastStatus(false);
-            }
-            if (this.swiper.activeIndex === 0) {
-              this.setFirstStatus(true);
-            } else {
-              this.setFirstStatus(false);
-            }
-          }
-        }
-      });
-    }
-    addFixedClass() {
-      this.container.classList.add("fixed");
-    }
-    removeFixedClass() {
-      this.container.classList.remove("fixed");
-    }
-    swipeNext() {
-      if (!this.isSwiping) {
-        this.isSwiping = true;
-        this.swiper.slideNext();
-      }
-    }
-    swipePrev() {
-      if (!this.isSwiping) {
-        this.isSwiping = true;
-        this.swiper.slidePrev();
-      }
-    }
-    getLastStatus() {
-      return this.swiperLastSlide;
-    }
-    getFirstStatus() {
-      return this.swiperFirstSlide;
-    }
-    setLastStatus(status) {
-      this.swiperLastSlide = status;
-    }
-    setFirstStatus(status) {
-      this.swiperFirstSlide = status;
-    }
-  }
-  let observedSectionsList = [];
   document.querySelectorAll(".observed-section").forEach((section) => {
-    const wrapper = document.createElement("div");
-    wrapper.classList.add("section-wrapper");
-    section.parentNode.insertBefore(wrapper, section);
-    wrapper.appendChild(section);
-    wrapper.style.height = +section.clientHeight + 20;
-    observedSectionsList.push(new ObservedSection(wrapper));
-  });
-  function throttle(func, limit) {
-    let lastCall = 0;
-    return function(...args) {
-      const now2 = Date.now();
-      if (now2 - lastCall >= limit) {
-        lastCall = now2;
-        func(...args);
-      }
-    };
-  }
-  const onScroll2 = throttle((self) => {
-    if (!isScrollBlocked) {
-      if (scrollDirection > 0) {
-        observedSectionsList.forEach((section) => {
-          if (window.scrollY > +section.offsetY && window.scrollY < Number(section.offsetY) + Number(section.height) && !section.swiperLastSlide) {
-            currentObservedSection = section;
-            EnablePreventDefault();
-            window.scrollTo(0, currentObservedSection.offsetY);
-          }
-        });
-      } else {
-        let reverse = observedSectionsList.reverse();
-        reverse.forEach((section) => {
-          if (window.scrollY < Number(section.offsetY) + Number(section.height) / 2 && !section.swiperFirstSlide) {
-            currentObservedSection = section;
-            EnablePreventDefault();
-            window.scrollTo(0, Number(currentObservedSection.offsetY) + Number(currentObservedSection.height) / 2);
-          }
-        });
-      }
-    } else {
-      if (currentObservedSection !== void 0) {
-        if (!currentObservedSection.isSwiping) {
-          if (scrollDirection > 0) {
-            if (!currentObservedSection.getLastStatus()) {
-              currentObservedSection.swipeNext();
-            } else {
-              DisablePreventDefault();
-              currentObservedSection = void 0;
-            }
-          } else {
-            if (!currentObservedSection.getFirstStatus()) {
-              currentObservedSection.swipePrev();
-            } else {
-              DisablePreventDefault();
-              currentObservedSection = void 0;
-            }
-          }
+    const slider = section.querySelector(".swiper");
+    const sectionRect = slider.getBoundingClientRect();
+    const nextSection = section.nextSibling;
+    let isSwiping = false;
+    const swiper = new Swiper(slider, {
+      direction: "horizontal",
+      modules: [Mousewheel, EffectFade],
+      effect: "fade",
+      allowTouchMove: true,
+      mousewheel: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      freeMode: false,
+      autoHeight: false,
+      on: {
+        slideChangeTransitionStart: () => {
+          window.scrollY !== sectionRect.top - 82 && window.scrollTo({
+            top: sectionRect.top - 82,
+            behavior: "smooth"
+          });
+          isSwiping = true;
+        },
+        slideChangeTransitionEnd: () => {
+          setTimeout(() => {
+            isSwiping = false;
+          }, 100);
         }
-      }
-    }
-  }, 200);
-  var observer = createObserver();
-  document.addEventListener("wheel", (event2) => {
-    if (isScrollBlocked) {
-      event2.preventDefault();
-    }
-  }, { passive: false });
-  function createObserver() {
-    return Observer.create({
-      target: window,
-      type: "wheel,touch",
-      preventDefault: isScrollBlocked,
-      onChange: onScroll2,
-      onUp: () => {
-        scrollDirection = -1;
-      },
-      onDown: () => {
-        scrollDirection = 1;
       }
     });
-  }
+    section.addEventListener("wheel", function(event2) {
+      if (event2.deltaY > 0 && swiper.isEnd && !isSwiping) {
+        event2.preventDefault();
+        const rect = nextSection.getBoundingClientRect();
+        window.scrollTo({
+          top: rect.top + window.scrollY - 82,
+          behavior: "smooth"
+        });
+      } else if (event2.deltaY < 0 && swiper.activeIndex === 0 && !isSwiping) {
+        event2.preventDefault();
+        window.scrollTo({
+          top: sectionRect.top - 82 - window.innerHeight,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
   document.querySelectorAll(".animation-title").forEach((span) => {
     gsapWithCSS.set(span, { opacity: 0, y: 100 });
     gsapWithCSS.to(span, {
